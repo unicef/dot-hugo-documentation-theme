@@ -20,14 +20,14 @@
   <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
 
   {{ "<!-- fonts -->" | safeHTML }}
-  <link href="https://fonts.googleapis.com/css?family={{replace .Site.Params.font_family ' ' '+' | title}}:300,400,700&display=swap" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css?family={{replace .Site.Params.font_family ' ' '+' | title}}:300,400,700&display=swap" rel="stylesheet">-->
 
   {{ "<!-- PDF.js -->" | safeHTML }}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+  <script src="{{ `plugins/ajax/pdf.min.js` }}"></script>
+  <script src="{{ `plugins/ajax/html2pdf.bundle.js` }}"></script>
 
   {{ "<!-- fonts -->" | safeHTML }}
-  <script src="https://kit.fontawesome.com/9196e0632a.js" crossorigin="anonymous"></script>
+  <script src="{{ `plugins/fontawesome/9196e0632a.js.js` }}" crossorigin="anonymous"></script>
   
   <style>
   :root{
@@ -59,7 +59,7 @@
 <script src="{{ `plugins/bootstrap/bootstrap.min.js` | absURL }}"></script>
 
 {{ "<!-- PopperJS -->" | safeHTML }}
-<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="{{ `plugins/popperjs/popper.min.js` }}"></script>
 
 {{ "<!-- match-height JS -->" | safeHTML }}
 <script src="{{ `plugins/match-height/jquery.matchHeight-min.js` | absURL }}"></script>
