@@ -1,0 +1,11 @@
+---
+- buttons:
+    edit_page: Seite bearbeiten
+- layouts:
+    redirect_title: Diese Seite wurde verschoben
+    redirect_body: Diese Seite wurde verschoben. Sie werden in fünf Sekunden weitergeleitet. Bitte aktualisieren Sie alle Lesezeichen. Wenn Sie nicht weitergeleitet werden, folgen Sie bitte dem unten stehenden Link.
+
+- footer:
+    legal: "Finden Sie rechtliche Informationen und Richtlinien zu den digitalen Kommunikationen von {{ $.Site.Params.brand.parent_org_name }}."
+- topics_title: Suchen Sie Ihre Antwort nach Thema
+- send: Senden
